@@ -1,33 +1,72 @@
 # employee-attrition-analysis
 Machine Learning project for predicting employee attrition.
-# Employee Attrition Analysis and Prediction
 
-This project explores employee attrition using machine-learning techniques to help organizations understand and predict which employees are at risk of leaving. The IBM HR Analytics Employee Attrition dataset is used to build and evaluate predictive models.
+## 1. Title
+Employee Attrition Analysis and Prediction
 
-## 📘 Project Overview
-The workflow includes:
+## 2. Project Description
+This project focuses on predicting employee attrition using machine-learning techniques.  
+Using the IBM HR Analytics Employee Attrition dataset, the project analyzes key factors influencing employee turnover and builds predictive models to help organizations identify employees who may be at risk of leaving.  
+The workflow includes data preprocessing, exploratory analysis, model training, and evaluation using well-established ML methods.
 
-- Data preprocessing and cleaning  
-- Encoding categorical variables  
+## 3. Features
+- Data cleaning and preprocessing  
+- Encoding of categorical variables  
 - Handling class imbalance using **SMOTE**  
 - Scaling numerical features  
-- Training models:
+- Training two predictive models:
   - Logistic Regression  
   - Decision Tree Classifier  
-- Evaluating model performance using:
-  - Accuracy
-  - Precision & Recall
-  - Confusion Matrix
-  - ROC-AUC Curve
+- Evaluation using:
+  - Accuracy  
+  - Precision & Recall  
+  - Confusion Matrix  
+  - ROC-AUC Curve  
+- Visualization of model performance and feature importance  
 
-The goal is to identify the most influential factors contributing to employee attrition and build accurate, interpretable models.
+## 4. Technologies Used
+- Python 3  
+- Pandas  
+- NumPy  
+- Scikit-Learn  
+- Imbalanced-Learn (SMOTE)  
+- Matplotlib  
+- Seaborn  
+- Jupyter Notebook
+  
+## 5. Project Structure
 
-
-
-## 📂 Project Structure
 ├── data/
+│   └── employee_data.csv
 ├── notebooks/
-│ └── attrition_analysis.ipynb
+│   └── attrition_analysis.ipynb
 ├── models/
+│   ├── logistic_regression.pkl
+│   └── decision_tree.pkl
 ├── README.md
 └── requirements.txt
+
+
+## 6. Installation Steps
+Run the following command to install the project dependencies:
+
+pip install -r requirements.txt
+
+## 7. How to Run
+1. Open a terminal and launch Jupyter Notebook:
+jupyter notebook
+2. Open the file:
+attrition_analysis.ipynb
+
+## 8. Dataset Info
+Dataset: IBM HR Analytics Employee Attrition Dataset
+Source: Kaggle
+Target Variable: Attrition — Yes / No
+Includes features related to:
+Demographics
+Job roles & departments
+Compensation
+Performance metrics
+Work environment factors
+
+
